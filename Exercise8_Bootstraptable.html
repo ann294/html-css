@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <title>Exercise 8 - Bootstrap Table</title>
+        <meta name="viewport" content="width=device=width, initial-scale=1"/>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="js/bootstrap.min.js" type="javascript"></script>
+
+        <style>
+            .row>div {
+                border:1px solid lightgray;
+                background-color:lightgreen;
+                text-align:center;
+            }
+        
+            .container,div[class^=".container"] {
+                background-color: lightseagreen;
+                border-radius: 4px;
+            }
+            
+            .table-striped>tbody>tr:nth-of-type(odd)>* {
+                color:aqua;
+            }
+
+            .img-thumbnail {
+                padding:0.5em;
+            }
+
+            .rounded-circle>img {
+                position:relative;
+                left: 40px;
+
+            }
+            .list-group-item {
+                color:grey;
+                background-color: beige;
+            }
+           
+            
+        </style>
+
+
+
+    </head>
+
+    <body>
+
+        <p class="text-muted"> text Muted</p>
+        <p class="text-primary"> text primary</p>
+        <p class="text-success"> text success</p>
+        <p class="text-info"> text info</p>
+        <p class="text-warning"> text warning</p>  
+        <p class="text-danger"> text danger</p>
+        <p class="text-secondary"> text secondary</p>
+        <p class="text-white"> text white</p>
+        <p class="text-dark"> text dark</p>
+        <p class="text-body"> text body</p>
+
+        <h2>Table 1</h2>
+
+        <table class="table table-striped table-boarderless table-light table-hover table-sm">
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Qty.</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="table-primary">
+                    <th>Monitor</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="table-success">
+                    <th>tv</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="table-danger">
+                   
+                    <th>Sofa table</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="table-info">
+                    
+                    <th>chairs</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+
+                <tr class="table-warning">
+                    
+                    <th>chairs</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+
+
+            </tbody>
+
+
+    
+        </table >
+
+        <h2>Table 2</h2>
+
+        <table class="table table-stripped table-boardered table-light table-hover ">
+            <thead>
+                <tr  >
+                    <th>Item Description</th>
+                    <th>Qty.</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr >
+                    <th>Monitor</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr  >
+                    <th>Tv</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>Sofa table</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>Chairs</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+                </tr>
+
+
+            </tbody>
+
+
+    
+        </table >
+
+        <h2>Table 3</h2>
+
+        <table class="table table-stripped table-boardered table-dark table-hover" >
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Qty.</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Monitor</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>laptop table</th>
+                    <td>5pcs</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>sofa table</th>
+                    <td>1</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>chairs</th>
+                    <td>6pcs.</td>
+                    <td>4000</td>
+                    <td>4000</td>
+
+                </tr>
+
+
+            </tbody>
+
+
+    
+        </table>
+
+        <h2>Table 4</h2>
+
+        <div class="table-responsive xl">
+        <table class="table table-stripped table-boarderless table-hover ">
+            <thead>
+                <tr  >
+                    <th>Item Description</th>
+                    <th>Qty.</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+                    <th>Amount1</th>
+                    <th>Amount2</th>
+                    <th>Amount3</th>
+                    <th>Amount4</th>
+                    <th>Amount5</th>
+                    <th>Amount6</th>
+                    <th>Amount7</th>
+                    <th>Amount8</th>
+                    <th>Amount9</th>
+                    <th>Amount10</th>
+                
+                    
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr >
+                    <th>Monitor</th>
+                    <th>1</th>
+                    <th>4000</th>
+                    <th>4000</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr  >
+                    <th>tv</th>
+                    <th>1</th>
+                    <th>4000</th>
+                    <th>4000</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>sofa table</th>
+                    <th>1</th>
+                    <th>4000</th>
+                    <th>4000</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <th>chairs</th>
+                    <th>6pcs.</th>
+                    <th>4000</th>
+                    <th>4000</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+
+                </tr>
+
+
+            </tbody>
+
+
+    
+        </table >
+        </div>
+
+        <h3>Images Sample</h3>
+
+        <img src="images/baking.jpg" class="rounded" width="300" height=auto/>
+
+        <img src="images/pastries.jpg" class =  "rounded-circle" width="300" height="auto">
+
+        <img src="images/pexels-ken-tomita-389818.jpg" class="img-thumbnail" width="300" >
+
+        <div styles="weight:200px; width:200; overflow :hidden; "class="rounded-circle">
+
+            <img src="images/pastries.jpg" class width="200" height="auto">
+ 
+        </div> 
+
+        <div>
+
+            <img src="images/pexels-ken-tomita-389818.jpg" class="rounded float-start" width="300" height="auto">
+            <p>Lorem Ipsum</p>
+            <img src="images/pastries.jpg" class="rounded float-end" width="300" height="auto"  />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                   non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                   
+        </div>
+        *///////>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+<section class="my-portfolio pt-5 pb-5">
+    <div class="container">
+        <h3 class="text-center mb-5">My Portfolio</h3>
+        <div class="row row-cols-1 row-cols-sm-1
+         row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify">
+            <div class="col">
+                <div class="card h-188">
+                    <div class="card-body"></div>
+                        <h4 class="card-title">My First Project</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                       </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<section class="my-portfolio pt-5 pb-5">
+ <div class="container">
+    
+
+    
+            <div class="col">
+                <div class="card h-188">
+                    <div class="card-header">
+                        Card Header
+                        <div class="card-body">
+                            <h4 class="card-title">My Second Project</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item"> item1</li>
+                                <li class="list-group-item">item2</li>
+                                <li class="list-group-item"> item3</li>
+                                <li class="list-group-item"> item4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-188">
+                    <div class="card-header">
+                        Card Header
+                        <div class="card-body">
+                            <h4 class="card-title">My Second Project</h4>
+                            <img src="images/profile-banner.jpg" class="rounded" width="300" height="auto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div>
+                                Card footer
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-188">
+                    <div class="card-header">
+                        Card Header
+                        <div class="card-body">
+                            <h4 class="card-title">My Second Project</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div>
+                                Card footer
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+    </div>
+</div>
+</section>
+
+<div class="container">
+    <form class="border p-3" >
+        <div class="row">
+            <label class="form-label"> First Name</label>
+            <input class="form-control"> </input>
+        </div>
+        
+        <div class="row"></div>
+    </form>
+
+</div>
+    
+
+
+
+  
+
+
+  
+
+
+   
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+                
+       
+
+    </body>
+</html>

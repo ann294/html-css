@@ -6,7 +6,7 @@ body {
 .page-wrapper {
     max-width :1024px;
     background-color:rgb(207, 222, 202);
-    margin:8px auto 10px auto;
+    margin:auto;
     padding: 5px;
     
 }
@@ -27,10 +27,11 @@ header {
 
 
 .banner{
-    height:400px;
+    width:auto;
+    height:600px;
     border-radius:5px;
-    background-image: url(../images/credit\ photo\ by\ Ken\ Tomita.png);
-    margin-top: 10px;
+    background-image: url(../images/profile-banner.jpg);
+    margin-top: 50px;
     background-size: cover;
     background-position:center;
 }
@@ -83,17 +84,8 @@ h2{
     padding-top:50px;
     font-size:45px;
 }
+/*----------------------------/-------------------------------------*/
 
-section.about-me {
-    margin-top: 40px;
-    margin-bottom:40px;
-
-}
-.about-me>p {
-    font-size:22px;
-    line-height: 38px;
-    text-align:justify;
-}
 
 
 
@@ -166,7 +158,7 @@ section>div>.d-inline {
 }
     
   
-
+/*-------------------------------------/------------css grid----*/
   .basic-grid, .advance-grid {
     display:grid;
     grid-template-columns: auto auto auto;
@@ -224,27 +216,56 @@ section>div>.d-inline {
     grid-row: 1/3;
   }
 
+/*--------------------------/--------Exercise5----------*/
 
-.grid-area, .grid-column {
+
+
+.grid-column {
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 250px 200px 400px;
+    grid-template-rows: 200px 2fr;
     background-color:rgb(30, 126, 217);
-    gap:20px;
+    gap:5px;
+    padding:10px;
+}
+
+.grid-area {
+    display:grid;
+    grid-template-columns: 100px 50px auto;
+    background-color:rgb(30, 126, 217);
+    gap:5px;
     padding:10px;
    
 }
 
-.grid-area>div,
+
+
+
+.grid-area>div {
+    border:1px solid rgba(142, 235, 96, 0.8);
+    text-align:center;
+    line-height:52px ;
+    background-color:#7ec2d7cc;
+    padding:5px;
+  
+}
+
+
+
 .grid-column>div {
     border:1px solid rgba(142, 235, 96, 0.8);
     text-align:center;
     line-height:52px ;
     background-color:#7ec2d7cc;
-    padding:15px;
-    box-shadow:5px 10px #b359c7cc;
+    padding:5px;
+  
 }
 
 
+
+
+
+/*------------------------------responsive-------------*/
 nav ul {                 
     list-style: none;
     margin: 0;
@@ -302,6 +323,34 @@ nav ul li {
     }
     
 }
+
+/*----------------------------/-------------Bootstrap--------------------//*/
+
+.row>.col {
+    border: 10px solid white;
+    background-color:rgb(253, 253, 253);
+    
+}
+/*------------------------------------------------------*/
+
+.section
+@media screen and (max-width:700px) {
+    .work-education .row .col {
+        display:none;
+    }
+}
+
+.work-education .row .col.text-grid,
+.work-education .row .col.ordr-last {
+    display:block;
+    text-align; center;important
+}
+
+/*-------------exercise 9----------------//-------------------/
+
+
+
+
 
 
 
