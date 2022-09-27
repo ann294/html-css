@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Invoice Using Bootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="js/bootstrap.min.js" type="javascript"></script>
+
+        <style>
+            .container {
+                padding-top: 100px;
+                background-color: rgb(243, 228, 241);
+            }
+    
+        
+
+            
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <h1>D'bakerz Corner</h1>
+        
+
+        <div class="container"> 
+            <form class="border p3 my-5 rounded">
+                    <div class="row">
+                        <div class="col my-2 rounded">
+                            <label class="form-label">Invoice to:</label>
+                            <input class="form-control" type="text" name="first_name">
+                        </div>
+                        <div>
+                            <label class="form-label">Contact #:</label>
+                            <input class="form-control" type="text" name="contact-number">
+                        </div>
+                    </div> 
+                    <div class="row">
+                            <div class="col my-2 rounded">
+                            <label class="form-label">Delivery Date</label>
+                            <input class="form-control" type="date" name="delivery_date">
+                        </div>
+                    </div> 
+                
+
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Items</th>
+                                <th>Qty.</th>
+                                <th>Unit Price</th>
+                                <th>Total Price Amount</th>
+                                
+                            </tr>
+                        <thead>
+            
+                        <tbody class="table-group-divider">
+                                
+                            <tr>
+                                <td style="font-family:normal" ><textarea name="description1" placeholder="enter item details" row="5"cols="50" width="200%px"></textarea></td>
+                                <td ><input name="Qty1" type="number"></td>
+                                <td ><input name="UnitPrice1" type="text"></td>
+                                <td ><input name="Amount" type="number"></td>
+                            </tr>
+                                
+                            <tr>
+                                <td style="font-family:normal" ><textarea name="description2"placeholder="enter item details" row="5"cols="50" width="200%px"></textarea></td>
+                                <td><input name="Qty2" type="number"></td>
+                                <td><input name="UnitPrice2" type="text"></td>
+                                <td><input name="Amount2"type="number"></td>
+                            </tr>
+                            
+                        
+                             <tr>
+                                <td style="font-family:normal" ><textarea name="description3"placeholder="enter item details" row="5"cols="50" width="200%px"></textarea></td>
+                                <td><input name="Qty3" type="number"></td>
+                                <td><input name="UnitPrice3" type="text"></td>
+                                <td><input name="Amount3"type="number"></td>
+                             </tr>
+                
+                             <tr>
+                                <td style="font-family:normal" ><textarea name="description4" placeholder="enter item details" row="5"cols="50" width="200%px"></textarea></td>
+                                <td><input name="Qty4" type="number"></td>
+                                <td><input name="UnitPrice4" type="text"></td>
+                                <td><input name="Amount4"type="number"></td>
+                             </tr>
+                    
+                
+                            <tr>
+                                <td colspan="3" style="text-align:right" ;>Sub-total</td>
+                                <td><input name="sub-total"> </td>
+                               
+                            </tr>
+                
+                            <tr>
+                                <td colspan="3" style="text-align:right">VAT%</td>
+                                <td><input name="VAT%" ></td>
+                            
+                            </tr>
+                
+                            <tr>
+                                <td colspan="3" style="text-align:right";>Total</td>
+                                <td><input name="Total"> </td>
+                                
+                            </tr>
+                
+                
+                        </tbody>
+                        
+                    </table>
+
+                    <div class="row">
+                        <div class="col my-2">
+                            <textarea class="form-control" name="address" placeholder="Add address here"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="form-control" type="file">
+                    </div>
+                    <div class="row">
+                        <div class="col my-2">
+                            <label class="form-label">Payment Method</label>
+                            <select class="form-select" name="payment method">
+                                <option>--</option>
+                                <option>Gcash</option>
+                                <option>Paymaya</option>
+                                <option>Cash On Delivery</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2">
+                            <label class="form-label">Amount</label>
+                            <input class="form-control" type="number" name="amount">
+                        </div>
+                        <div class="col my-2">
+                            <label class="form-label">VAT</label>
+                            <input class="form-control" type="number" name="var">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-2">
+                            
+                            <input id="curr_php" class="form-check-input" type="radio" name="currency">
+                            <label for="curr_php" class="form-label">PHP</label>
+                            <input id="curr_usd" class="form-check-input" type="radio" name="currency">
+                            <label for="curr_usd" class="form-label">USD</label>
+                            
+                        </div>
+    
+                    </div>
+
+                    <div class="row">
+                        <div class="col my-2">
+                            <button class="btn btn-primary">Submit</button>
+                            
+                        </div>
+                    </div>
+    
+            
+
+            </form>
+
+
+        </div>
+
+       
+        
+        
+
+
+
+
+    </body>
+
+       
+
+</html>
