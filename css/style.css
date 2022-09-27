@@ -333,20 +333,11 @@ nav ul li {
 }
 /*------------------------------------------------------*/
 
-.section
-@media screen and (max-width:700px) {
-    .work-education .row .col {
-        display:none;
-    }
-}
 
-.work-education .row .col.text-grid,
-.work-education .row .col.ordr-last {
-    display:block;
-    text-align; center;important
-}
 
-/*-------------exercise 9----------------//-------------------/
+
+
+
 
 
 
