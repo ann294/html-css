@@ -7,19 +7,13 @@
         <title>Exercise 8 - Bootstrap Table</title>
         <meta name="viewport" content="width=device=width, initial-scale=1"/>
         
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/style.css" rel="stylesheet"/>
-        <script src="js/bootstrap.min.js" type="javascript"></script>
+       A
 
         <style>
-            .row>div {
-                border:1px solid lightgray;
-                background-color:lightgreen;
-                text-align:center;
-            }
+           
         
             .container,div[class^=".container"] {
-                background-color: lightseagreen;
+            
                 border-radius: 4px;
             }
             
@@ -377,7 +371,7 @@
 
             <img src="images/pexels-ken-tomita-389818.jpg" class="rounded float-start" width="300" height="auto">
             <p>Lorem Ipsum</p>
-            <img src="images/pastries.jpg" class="rounded float-end" width="300" height="auto"  />
+            <img src="images/pastries.jpg" class="rounded float-end" width="300" height="auto"  
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                   dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
@@ -478,19 +472,128 @@
 </div>
 </section>
 
-<div class="container">
-    <form class="border p-3" >
-        <div class="row">
-            <label class="form-label"> First Name</label>
-            <input class="form-control"> </input>
-        </div>
-        
-        <div class="row"></div>
-    </form>
 
-</div>
+
+    <h1>Making form using bootstrap</h1>
+
+    <div class="container">
+        <form class="border p-3 my-5 rounded">
+            <div class="row">
+                <div class="col my-2>                                                                                                                                                                                                                                                                                                                                                      ">
+                    <label class="form-label">First Name</label>
+                     <input class="form-control" type="text" name="first_name">
+                </div>
+                <div class="col my-2">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" type="text" name="last_name">
+                </div>
+            </div>
+           
+            
+            
+           <div class="row">
+                <div class="col my-2">
+                    <label class="form-label">Email</label> 
+                    <input class="form-control" type="email" name="email">
+                </div>
+                <div class="col my-2">
+                    <label class="form-label">Contact #</label>
+                    <input class="form-control" type="text" name="contact_number">
+
+                </div>
+
+                <div class="row">
+                    <div class="col my-2">
+                        <textarea class="form-control" name="address" placeholder="Add address here"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input class="form-control" type="file">
+                </div>
+                <div class="row">
+                    <div class="col my-2">
+                        <label class="form-label">Payment Method</label>
+                        <select class="form-select" name="payment method">
+                            <option>--</option>
+                            <option>Gcash</option>
+                            <option>Credit Card</option>
+                            <option>Paypal</option>
+                            <option>Cash On Delivery</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-2">
+                        <label class="form-label">Amount</label>
+                        <input class="form-control" type="number" name="amount">
+                    </div>
+                    <div class="col my-2">
+                        <label class="form-label">VAT</label>
+                        <input class="form-control" type="number" name="var">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-2">
+                        <input id="curr_aud" class="form-check-input" type="radio" name="currency">
+                        <label for="curr_aud" class="form-label -me">AUD</label>
+                        <input id="curr_php" class="form-check-input" type="radio" name="currency">
+                        <label for="curr_php" class="form-label">PHP</label>
+                        <input id="curr_usd" class="form-check-input" type="radio" name="currency">
+                        <label for="curr_usd" class="form-label">USD</label>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col my-2">
+                        <input id="c_giftcard" class="form-check-input" type="checkbox" name="gift_card">
+                        <label for="c_giftcard" class="form-label">With Gift Card</label>
+                        <input id="c_discount" class="form-check-input" type="checkbox" name="discount">
+                        <label for="c_discount" class="form-label">With 10%</label>
+                        <input id="c_lalamove" class="form-check-input" type="checkbox" name="courier">
+                        <label for="c_lalamove" class="form-label">In Ecobag</label>          
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label class="form-label">Delivery date</label>
+                        <input class="form-control" type="date" name="delivery_date">
+                    </div>
+                    <div>
+                        <label class="form-label"></label>
+                        <input class="form-control" type="image" name="image" src="images/pastries.jpg"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label class="form-label">Range</label>
+                        <input class="form-range" type="range " name="range" step="5" min="0" max="20">
+                                                                                                                                                                                                                                                                                                                                  ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-2">
+                        <button class="btn btn-primary">Submit</button>
+                        <button class="btn btn-success">Submit</button>
+                        <button class="btn btn-secondary">Submit</button>
+                        <button class="btn btn-warning">Submit</button>
+                        
+
+                    </div>
+                </div>
+
+               
+                   
+            </div> 
     
 
+               
+        </form>
+    
+    </div>
+
+   
 
 
   

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+    <head>
+        <title>JS If, Else Statements Exercise</title>
+    </head>
+
+
+    <body>
+        <input type="number" placeholder="numbers" id="number1">
+        <button onclick="evenorodd()">Check</button>
+        <div id="number"></div>
+
+
+        <input id="number2" type="text" placeholder="letter">
+        <button onclick="ConsonantOrVowel()">Click</button>
+        <div id="letter"></div>
+
+        
+        <script>
+           function oddoreven(){
+            let x = parseInt(document.getElementById('number1').value);
+            if (x % 4) == 0 ) {
+                document.getElementById('number').innerHTML = "Even";
+            }
+            else {
+                document.getElementById('number').innerHTML = "Odd";
+            }
+
+            }
+               
+
+
+
+           function ConsonantOrVowel(){
+            let x = parseInt(document.getElementById('number2').value);
+            if(x == "x" | x =="y" | x =="z" ){
+                document.getElementById("letter").innerHTML = "consonant";
+            }
+            else{
+                document.getElementById("letter").innerHTML = "vowel";
+            }
+           }
+        </script>
+    </body>
+</html>
