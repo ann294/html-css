@@ -6,6 +6,9 @@
 
     <head>
         <title>JS If, Else Statements Exercise</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <meta name="viewport" content=width-devie-width, initial-scale-1.0>
     </head>
 
 
@@ -15,10 +18,7 @@
         <div id="number"></div>
 
 
-        <input id="number2" type="text" placeholder="letter">
-        <button onclick="ConsonantOrVowel()">Click</button>
-        <div id="letter"></div>
-
+        
         
         <script>
            function oddoreven(){
@@ -31,13 +31,17 @@
             }
 
             }
+        </script>
                
+        <input id="number2" type="text" placeholder="letteronly" value=""/>
+        <button onclick="ConsonantOrVowel()">Click</button>
+        <div id="letter"></div>
+       
 
-
-
-           function ConsonantOrVowel(){
-            let x = parseInt(document.getElementById('number2').value);
-            if(x == "x" | x =="y" | x =="z" ){
+        <script>
+              function ConsonantOrVowel(){
+            let x = parseInt(document.getElementById('number1').value);
+            if(x == "a" | x =="e" | x =="i" |x == "o"|x =="u"){
                 document.getElementById("letter").innerHTML = "consonant";
             }
             else{
@@ -45,5 +49,8 @@
             }
            }
         </script>
+       
+
+        
     </body>
 </html>
